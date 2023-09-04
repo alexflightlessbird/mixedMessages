@@ -48,6 +48,8 @@ const runProgram = (generate) => {
     const profList = getTotal(professions,generate);
     const ageList = ageGenerator(generate);
 
+    console.log("Here are your characters to work with:");
+
     for (let i = 1; i < 11; i++) {
         console.log(`${i}. ${nameList[i-1]} is a(n) ${profList[i-1]}, and they are ${ageList[i-1]} years old.`);
     }
